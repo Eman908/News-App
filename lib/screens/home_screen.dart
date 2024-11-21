@@ -3,7 +3,7 @@ import 'package:news_app/widgets/category_list.dart';
 import 'package:news_app/widgets/news_list.dart';
 
 class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,12 +26,16 @@ class HomeScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: CustomScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           slivers: [
             SliverToBoxAdapter(child: CategoryList()),
-            SliverToBoxAdapter(child: SizedBox(height: 24,),),
+            const SliverToBoxAdapter(
+              child: SizedBox(
+                height: 24,
+              ),
+            ),
             NewsList()
-        
+
             // SliverToBoxAdapter(child: NewsList())
           ],
         ),

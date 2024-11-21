@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:news_app/models/newslist_model.dart';
 
 class NewsCard extends StatelessWidget {
-   NewsCard({required this.news, super.key});
+  const NewsCard({required this.news, super.key});
   final NewslistModel news;
   @override
   Widget build(BuildContext context) {
