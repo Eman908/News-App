@@ -13,10 +13,7 @@ class NewsService {
 
     List<NewslistModel> newsmodel = [];
     for (var topNewsItem in topNewsList) {
-      NewslistModel newslistModel = NewslistModel(
-          description: topNewsItem['description'],
-          heading: topNewsItem['title'],
-          image: topNewsItem['urlToImage']);
+      NewslistModel newslistModel = NewslistModel.fromJson(topNewsItem);
 
       newsmodel.add(newslistModel);
     }
