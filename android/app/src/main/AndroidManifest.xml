@@ -2,7 +2,7 @@
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Add this line -->
 
     <application
-        android:label="news_app"
+        android:label="FlutterNews"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
