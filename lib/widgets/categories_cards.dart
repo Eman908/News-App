@@ -16,18 +16,15 @@ class CatgeoryCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(right: 8),
         child: Container(
-          height: 85,
           width: 160,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            image: DecorationImage(
-                image: AssetImage(category.image), fit: BoxFit.fill),
-          ),
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(color: Colors.grey)),
           child: Center(
               child: Text(
             category.name,
             style: const TextStyle(
-                color: Colors.white, fontWeight: FontWeight.bold),
+                color: Colors.black, fontWeight: FontWeight.bold),
           )),
         ),
       ),

@@ -8,30 +8,18 @@ class CategoryList extends StatelessWidget {
   });
 
   final List<CategoriesModels> tabs = [
-    CategoriesModels(
-        name: 'Business',
-        image: 'assets/business.jpeg',
-        categoryName: 'business'),
-    CategoriesModels(
-        name: 'Technology',
-        image: 'assets/technology.jpeg',
-        categoryName: 'technology'),
-    CategoriesModels(
-        name: 'Entertainment',
-        image: 'assets/entertaiment.avif',
-        categoryName: 'entertainment'),
-    CategoriesModels(
-        name: 'Health', image: 'assets/health.avif', categoryName: 'health'),
-    CategoriesModels(
-        name: 'Science', image: 'assets/science.avif', categoryName: 'science'),
-    CategoriesModels(
-        name: 'Sports', image: 'assets/sports.jpeg', categoryName: 'sports'),
+    CategoriesModels(name: 'Business', categoryName: 'business'),
+    CategoriesModels(name: 'Technology', categoryName: 'technology'),
+    CategoriesModels(name: 'Entertainment', categoryName: 'entertainment'),
+    CategoriesModels(name: 'Health', categoryName: 'health'),
+    CategoriesModels(name: 'Science', categoryName: 'science'),
+    CategoriesModels(name: 'Sports', categoryName: 'sports'),
   ];
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 85,
+      height: 56,
       child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: tabs.length,
