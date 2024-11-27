@@ -1,7 +1,7 @@
 class NewslistModel {
-  String image;
+  String? image;
   String heading;
-  String description;
+  String? description;
 
   NewslistModel(
       {required this.description, required this.heading, required this.image});

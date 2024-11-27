@@ -8,13 +8,24 @@ class CategoryList extends StatelessWidget {
   });
 
   final List<CategoriesModels> tabs = [
-    CategoriesModels(name: 'General', image: 'assets/general.jpeg'),
-    CategoriesModels(name: 'Business', image: 'assets/business.jpeg'),
-    CategoriesModels(name: 'Technology', image: 'assets/technology.jpeg'),
-    CategoriesModels(name: 'Entertainment', image: 'assets/entertaiment.avif'),
-    CategoriesModels(name: 'Health', image: 'assets/health.avif'),
-    CategoriesModels(name: 'Science', image: 'assets/science.avif'),
-    CategoriesModels(name: 'Sports', image: 'assets/sports.jpeg'),
+    CategoriesModels(
+        name: 'Business',
+        image: 'assets/business.jpeg',
+        categoryName: 'business'),
+    CategoriesModels(
+        name: 'Technology',
+        image: 'assets/technology.jpeg',
+        categoryName: 'technology'),
+    CategoriesModels(
+        name: 'Entertainment',
+        image: 'assets/entertaiment.avif',
+        categoryName: 'entertainment'),
+    CategoriesModels(
+        name: 'Health', image: 'assets/health.avif', categoryName: 'health'),
+    CategoriesModels(
+        name: 'Science', image: 'assets/science.avif', categoryName: 'science'),
+    CategoriesModels(
+        name: 'Sports', image: 'assets/sports.jpeg', categoryName: 'sports'),
   ];
 
   @override
